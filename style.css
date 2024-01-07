@@ -10,10 +10,10 @@
   display: block;
   text-align: right;
 }
-.header-img {
+.header__img {
   width: 100%;
 }
-.header .header-link {
+.header__link {
   font-family: fantasy, cursive;
 }
 
@@ -27,12 +27,14 @@
   width: 500px;
   margin: 0 auto 0;
 }
-.task {
+.new-task__input-text,
+.item__label,
+.item__input-text {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
-.new-task-wrapper {
+.new-task__wrapper {
   display: flex;
 }
 .list {
@@ -43,11 +45,14 @@
 .title {
   list-style: none;
 }
-.input,
+.new-task__input-text,
+.item__input-text,
+.item__checkbox,
 .btn{
   outline: none;
 }
-.btn {
+.new-task__btn,
+.item__btn {
   background: none;
   border: 0px;
   color: #888;
@@ -69,7 +74,8 @@
   margin: 0;
   text-transform: uppercase;
 }
-.input-text {
+.new-task__input-text,
+.item__input-text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -81,12 +87,12 @@
   font-family: Lato, sans-serif;
   color: #888;
 }
-.input-text:focus {
+.item__input-text:focus {
   color: #333;
 }
 
 /* New Task */
-.new-task-title {
+.new-task__title {
   display: block;
   margin: 0 0 20px;
 }
@@ -108,43 +114,43 @@
   vertical-align: middle;
 }
 
-.input-checkbox {
+.item__checkbox {
   margin: 0 10px;
 }
-.task-label {
+.item__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-.item >    .input-text {
+.item >    .item__input-text {
   width: 226px;
 }
-.delete-img {
+.btn-delete__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.delete-img:hover {
+.btn-delete__img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-#completed-tasks .task-label {
+#completed-tasks .item__label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.list .item .input-text {
+.list .item .item__input-text {
   display: none;
 }
 
-.list .item.edit-mode .input-text {
+.list .item.edit-mode .item__input-text {
   display: inline-block;
   width:224px
 }
 
-.list .item.edit-mode .task-label {
+.list .item.edit-mode .item__label {
   display: none;
 }
