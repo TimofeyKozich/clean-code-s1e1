@@ -9,7 +9,7 @@
 // Event handling, user interaction is what starts the code execution.
 
 var taskInput=document.getElementById("new-task");//Add a new task.
-var addButton=document.getElementsByTagName("button")[0];//first button
+var addButton=document.querySelectorAll(".btn")[0];//first button
 var incompleteTaskHolder=document.getElementById("todo-tasks");//ul of #incompleteTasks
 var completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
 
@@ -18,18 +18,22 @@ var completedTasksHolder=document.getElementById("completed-tasks");//completed-
 var createNewTaskElement=function(taskString){
 
   var listItem=document.createElement("li");
+  listItem.classList.add(".item");
 
   //input (checkbox)
   var checkBox=document.createElement("input");//checkbx
+  checkBox.classList.add("input-checkbox");
   //label
   var label=document.createElement("label");//label
   //input (text)
   var editInput=document.createElement("input");//text
+  editInput.classList.add("input-text");
   //button.edit
   var editButton=document.createElement("button");//edit button
-
+  editButton.classList.add(".btn");
   //button.delete
   var deleteButton=document.createElement("button");//delete button
+  deleteButton.classList.add(".btn");
   var deleteButtonImg=document.createElement("img");//delete button image
 
   label.innerText=taskString;
@@ -156,8 +160,8 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
   console.log("bind list item events");
   //select ListItems children
   var checkBox=taskListItem.querySelector("input[type=checkbox]");
-  var editButton=taskListItem.querySelector("button.btn-edit");
-  var deleteButton=taskListItem.querySelector("button.btn-delete");
+  var editButton=taskListItem.querySelector(".btn.btn-edit");
+  var deleteButton=taskListItem.querySelector(".btn.btn-delete");
 
 
   //Bind editTask to edit button.
