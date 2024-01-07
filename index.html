@@ -18,39 +18,43 @@
           <button class="new-task__btn">Add</button>
         </div>
       </section>
-      <h3 class="title">Todo</h3>
-      <ul class="list" id="todo-tasks">
-        <li class="item">
-          <input class="item__checkbox" type="checkbox">
-          <label class="item__label">Pay Bills</label>
-          <input class="item__input-text" type="text">
-          <button class="item__btn btn-edit">Edit</button>
-          <button class="item__btn btn-delete">
-            <img class="btn-delete__img" src="./remove.svg" alt="delete button">
-          </button>
-        </li>
-        <li class="item edit-mode">
-          <input class="item__checkbox" type="checkbox">
-          <label class="item__label">Go Shopping</label>
-          <input class="item__input-text" type="text" value="Go Shopping">
-          <button class="item__btn btn-edit">Save</button>
-          <button class="item__btn btn-delete">
-            <img class="btn-delete__img" src="./remove.svg" alt="delete button">
-          </button>
-        </li>
-      </ul>
-      <h3 class="title">Completed</h3>
-      <ul class="list" id="completed-tasks">
-        <li class="item">
-          <input class="item__checkbox" type="checkbox" checked>
-          <label class="item__label">See the Doctor</label>
-          <input class="item__input-text" type="text">
-          <button class="item__btn btn-edit">Edit</button>
-          <button class="item__btn btn-delete">
-            <img class="btn-delete__img" src="./remove.svg" alt="delete button">
-          </button>
-        </li>
-      </ul>
+      <section class="todo">
+        <h3 class="title">Todo</h3>
+        <ul class="list" id="todo-tasks">
+          <li class="item">
+            <input class="item__checkbox" type="checkbox">
+            <label class="item__label">Pay Bills</label>
+            <input class="item__input-text" type="text">
+            <button class="item__btn btn-edit">Edit</button>
+            <button class="item__btn btn-delete">
+              <img class="btn-delete__img" src="./remove.svg" alt="delete button">
+            </button>
+          </li>
+          <li class="item edit-mode">
+            <input class="item__checkbox" type="checkbox">
+            <label class="item__label">Go Shopping</label>
+            <input class="item__input-text" type="text" value="Go Shopping">
+            <button class="item__btn btn-edit">Save</button>
+            <button class="item__btn btn-delete">
+              <img class="btn-delete__img" src="./remove.svg" alt="delete button">
+            </button>
+          </li>
+        </ul>
+      </section>
+      <section class="completed">
+        <h3 class="title">Completed</h3>
+        <ul class="list" id="completed-tasks">
+          <li class="item">
+            <input class="item__checkbox" type="checkbox" checked>
+            <label class="item__label">See the Doctor</label>
+            <input class="item__input-text" type="text">
+            <button class="item__btn btn-edit">Edit</button>
+            <button class="item__btn btn-delete">
+              <img class="btn-delete__img" src="./remove.svg" alt="delete button">
+            </button>
+          </li>
+        </ul>
+      </section>
     </main>
     <script src="app.js"></script>
   </body>
