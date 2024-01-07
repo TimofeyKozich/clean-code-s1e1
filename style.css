@@ -29,7 +29,7 @@
 .task {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 .new-task-wrapper {
   display: flex;
@@ -116,7 +116,7 @@
   width: 226px;
 }
 .item >    .input-text {
-  width: 226px
+  width: 226px;
 }
 .delete-img {
   height: 2em;
@@ -129,13 +129,13 @@
 
 /* Completed */
 #completed-tasks .task-label {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 .list .item .input-text {
-  display: none
+  display: none;
 }
 
 .list .item.edit-mode .input-text {
