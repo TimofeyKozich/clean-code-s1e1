@@ -87,7 +87,7 @@ var editTask=function(){
 
   var listItem=this.parentNode;
 
-  var editInput=listItem.querySelector('.item__input-text');
+  var editInput=listItem.querySelector(".item__input-text");
   var label=listItem.querySelector(".item__label");
   var editBtn=listItem.querySelector(".btn-edit");
   var containsClass=listItem.classList.contains("edit-mode");
